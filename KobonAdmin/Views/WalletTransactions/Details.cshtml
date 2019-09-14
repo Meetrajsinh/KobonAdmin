@@ -1,0 +1,67 @@
+﻿@model KobonAdmin.Models.WalletTransaction
+
+@{
+    ViewBag.Title = "Details";
+    //Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>WalletTransaction</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransactionType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransactionDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransactionDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransactionTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WalletId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WalletId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TransactionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

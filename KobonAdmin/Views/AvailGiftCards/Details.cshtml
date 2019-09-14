@@ -1,0 +1,83 @@
+﻿@model KobonAdmin.Models.AvailGiftCard
+
+@{
+    ViewBag.Title = "Details";
+    //Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AvailGiftCard</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClaimCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClaimCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpiryDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpiryDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Value)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Value)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GiftCardStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GiftCardStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WalletId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WalletId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AvailGiftCardId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

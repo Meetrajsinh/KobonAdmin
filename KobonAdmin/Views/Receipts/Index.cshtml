@@ -1,0 +1,64 @@
+﻿@model IEnumerable<KobonAdmin.Models.Receipt>
+
+@{
+    ViewBag.Title = "Index";
+    //Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ReceiptFields)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReceiptInfo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FilePath)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReceiptStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClaimOfferId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoreId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReceiptFields)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReceiptInfo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FilePath)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReceiptStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClaimOfferId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoreId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ReceiptId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ReceiptId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ReceiptId })
+        </td>
+    </tr>
+}
+
+</table>

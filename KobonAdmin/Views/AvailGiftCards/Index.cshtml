@@ -1,0 +1,76 @@
+﻿@model IEnumerable<KobonAdmin.Models.AvailGiftCard>
+
+@{
+    ViewBag.Title = "Index";
+    //Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ClaimCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpiryDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Value)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GiftCardStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UsedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WalletId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClaimCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExpiryDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Value)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GiftCardStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UsedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WalletId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequestId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccountId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AvailGiftCardId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AvailGiftCardId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AvailGiftCardId })
+        </td>
+    </tr>
+}
+
+</table>

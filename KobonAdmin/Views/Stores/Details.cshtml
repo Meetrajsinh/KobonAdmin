@@ -1,0 +1,99 @@
+﻿@model KobonAdmin.Models.Store
+
+@{
+    ViewBag.Title = "Details";
+    //Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Store</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StoreName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoreName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StoreLogo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoreLogo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeOfStore)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeOfStore)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StoreAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoreAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StorePhoneNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StorePhoneNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Longitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Website)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Website)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StoreReceiptId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoreReceiptId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.StoreId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

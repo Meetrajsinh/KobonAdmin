@@ -1,0 +1,58 @@
+﻿@model IEnumerable<KobonAdmin.Models.Notification>
+
+@{
+    ViewBag.Title = "Index";
+    //Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NotificationType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NotificationTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NotificationDesc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NotificationStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NotificationType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NotificationTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NotificationDesc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NotificationStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccountId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.NotificationId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.NotificationId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.NotificationId })
+        </td>
+    </tr>
+}
+
+</table>

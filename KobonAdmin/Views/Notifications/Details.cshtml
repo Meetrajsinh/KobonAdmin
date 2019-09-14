@@ -1,0 +1,59 @@
+﻿@model KobonAdmin.Models.Notification
+
+@{
+    ViewBag.Title = "Details";
+    //Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Notification</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NotificationType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NotificationType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NotificationTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NotificationTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NotificationDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NotificationDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NotificationStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NotificationStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NotificationId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

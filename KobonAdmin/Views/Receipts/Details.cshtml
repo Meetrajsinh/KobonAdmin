@@ -1,0 +1,67 @@
+﻿@model KobonAdmin.Models.Receipt
+
+@{
+    ViewBag.Title = "Details";
+    //Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Receipt</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ReceiptFields)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReceiptFields)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReceiptInfo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReceiptInfo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FilePath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FilePath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReceiptStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReceiptStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClaimOfferId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClaimOfferId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StoreId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoreId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReceiptId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,75 @@
+﻿@model KobonAdmin.Models.NotificationSetting
+
+@{
+    ViewBag.Title = "Details";
+    //Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NotificationSetting</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RemainderOnClaimOffer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RemainderOnClaimOffer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OffersMyLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OffersMyLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NewsUpdatesOffer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewsUpdatesOffer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CashbackOffers)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CashbackOffers)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CashbackReferrals)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CashbackReferrals)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CashbackEarnedByReferrer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CashbackEarnedByReferrer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SettingId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

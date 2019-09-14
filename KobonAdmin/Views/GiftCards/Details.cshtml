@@ -1,0 +1,67 @@
+﻿@model KobonAdmin.Models.GiftCard
+
+@{
+    ViewBag.Title = "Details";
+    //Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>GiftCard</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyLogo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyLogo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CardValidity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CardValidity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CardPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CardPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TermsAndConditions)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TermsAndConditions)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Instructions)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Instructions)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GiftCardId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
